@@ -11,7 +11,7 @@ const listOfIngredients = document.querySelector('ul#ingredients');
 
 const elements = ingredients.map(ingredient => {
   const list = document.createElement('li');
-  // console.log(list)
+
   list.classList = 'item'
   list.textContent = ingredient;
 
