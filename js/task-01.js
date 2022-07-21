@@ -1,9 +1,6 @@
-// * * * 1
-
 const listEl = document.querySelectorAll('li.item')
 console.log(`Number of categoties: ${listEl.length}`)
 
-// * * * 2
 
 const headers = document.querySelectorAll('h2')
 
