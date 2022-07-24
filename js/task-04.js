@@ -20,7 +20,7 @@ const ValueAll = document.querySelector("#value");
 // клік с калбеком.
 
 decValueBtn.addEventListener("click",handlerClickDecrement);
-incValueBtn.addEventListener("click",handleClickIncrement);
+incValueBtn.addEventListener("click",handlerClickIncrement);
 
 // Фукції decrement and incerement -  textContent.
 // Оновлення новим значенням змінної counterValue.
@@ -31,7 +31,7 @@ function handlerClickDecrement() {
 
 }
 
-function handleClickIncrement() {
+function handlerClickIncrement() {
     counterValue.increment();
     ValueAll.textContent = counterValue.value;
 }
