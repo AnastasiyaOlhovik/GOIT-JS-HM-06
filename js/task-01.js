@@ -1,11 +1,13 @@
-const listEl = document.querySelectorAll('li.item')
-console.log(`Number of categoties: ${listEl.length}`)
+const listEl = document.querySelectorAll('li.item');
+console.log(`Number of categories: ${listEl.length}`)
 
 
-const headers = document.querySelectorAll('h2')
 
-let header = []
-for (let i = 0; i < headers.length; i += 1) {
-    header = headers[i];
-    console.log(`${header.textContent}: ${header.nextElementSibling.children.length}`)
-}
+const array = [...listEl]
+    .map(
+        (category) =>
+            `Category: ${category.children[0].textContent} \nElements: ${category.children[1].children.length}`
+    )
+    .join("\n");
+
+console.log(array);
